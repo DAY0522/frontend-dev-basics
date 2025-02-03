@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>jquery practices</title>
+<script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+<script>
+/* jquery plug in */
+$(function() {
+	$('h1').flash();
+	$("#btn").click(function(){
+		$(this)
+			.hello()
+			.flash();
+	});
+});  
+</script>
+</head>
+<body>
+	<h1>jQuery Plug In</h1>
+	<div style='width:200px; margin: 50px auto'>
+		<button id='btn' title='click me'>click me</button>
+	</div>
+</body>
+</html>

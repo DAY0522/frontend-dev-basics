@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>백그라운드 예제</title>
+<style>
+body {margin:0; padding:0;}
+a {
+	display: block;
+	width: 400px;
+    margin: 13px auto;
+    padding: 17px 0;
+    border: 1px solid rgba(0, 0, 0, .06);
+    border-radius: 4px;
+    background-color: #03c75a;
+    box-shadow: 0 2px 4px 0 rgba(3, 199, 90, .12);
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+
+a i {
+    display: inline-block;
+    background-image: url(/ch03/images/naver.png);
+    background-size: 452px 436px;
+    background-position: 0px -301px;
+    background-repeat: no-repeat;
+    width: 72px;
+    height: 14px;
+    margin: 3px 8px 0 0;
+    vertical-align: top;
+}
+
+.blind {
+	display: inline-block;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+</style>
+</head>
+
+<body>
+	<h1>백그라운드 예제</h1>
+	<a href="/user/login">
+		<i>
+			<span class="blind">naver</span>
+		</i>
+		로그인
+	</a>
+</body>
+</html>

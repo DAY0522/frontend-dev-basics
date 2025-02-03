@@ -1,0 +1,33 @@
+﻿<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>백그라운드의 응용</title>
+<style>
+* {margin:0; padding:0}
+body {font-size:12px;}
+
+.box1, .box2, .box3 {
+	position: absolute;
+	width: 200px;
+	height: 100px;
+	line-height: 100px;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+}
+
+.box1 {background-color: #f00; left:100px; top:50px; z-index:80 }
+.box2 {background-color: #0f0; left:200px; top:80px; z-index:100 }
+.box3 {background-color: #00f; left:150px; top:110px; z-index:50 }
+ 
+
+</style>
+</head>
+
+<body>
+	<div class="box1">box1</div>
+	<div class="box2">box2</div>
+	<div class="box3">box3</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>jquery practices</title>
+<script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+<script>
+var images = [ 
+	"국화:Chrysanthemum.jpg", 
+	"사막:Desert.jpg", 
+	"수국:Hydrangeas.jpg", 
+	"해파리:Jellyfish.jpg", 
+	"코알라:Koala.jpg", 
+	"등대:Lighthouse.jpg", 
+	"펭귄:Penguins.jpg", 
+	"툴립:Tulips.jpg"
+];
+
+$(function(){
+	$("button").click(function(){
+		// 랜덤 변수 
+		var result = Math.floor( Math.random() * (images.length-1)  ) + 1;
+	});
+	
+});
+</script>
+</head>
+<body>
+	<button>화면을 변경</button>
+	<p>
+		<img src="images/Desert.jpg" alt="사막" />
+	</p>
+</body>
+</html>
